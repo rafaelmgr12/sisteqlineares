@@ -2,3 +2,4 @@
 2a. linha
   criei uma funcao
     tá ficando legal 
+a = 1
