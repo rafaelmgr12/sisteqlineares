@@ -2,8 +2,4 @@
 2a. linha
   criei uma funcao
     tá ficando legal 
-<<<<<<< HEAD
-a = 5
-=======
-a = 4
->>>>>>> muda
+a=55
