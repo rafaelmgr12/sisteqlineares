@@ -1,2 +1,3 @@
 # Resolução de Sistemas de Equações Lineares
-Solução por Gauss-Jordan
+
+Lidando com vetores, matrizes e ponteiros.
