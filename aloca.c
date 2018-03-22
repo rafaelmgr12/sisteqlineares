@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	
 	M = malloc( dim*sizeof(double *));
 	for( i = 0 ; i < dim ; i++ ) {
-		M[i] = malloc((dim+1)*sizeof(double) );
+		M[i] = malloc((dim)*sizeof(double) );
 	}    
 	i = j = 0;
 	
