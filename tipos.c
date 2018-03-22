@@ -24,16 +24,16 @@
 #include <stdio.h>
 
 int main(int argc, char **argv) {
-	 printf("size of a char is %d\n", sizeof(char));
-	 printf("size of a short is %d\n", sizeof(short));
-	 printf("size of a int is %d\n", sizeof(int));
-	 printf("size of a long is %d\n", sizeof(long));
-	 printf("size of a long long is %d\n", sizeof(long long));
-	 printf("size of a unsigned is %d\n", sizeof(unsigned));
-	 printf("size of a unsigned long is %d\n", sizeof(unsigned long));
-	 printf("size of a float is %d\n", sizeof(float));
-	 printf("size of a double is %d\n", sizeof(double));
-	 printf("size of a long double is %d\n", sizeof(long double));
+	 printf("size of a char is %d\n", (int) sizeof(char));
+	 printf("size of a short is %d\n", (int) sizeof(short));
+	 printf("size of a int is %d\n", (int) sizeof(int));
+	 printf("size of a long is %d\n", (int) sizeof(long));
+	 printf("size of a long long is %d\n", (int) sizeof(long long));
+	 printf("size of a unsigned is %d\n", (int) sizeof(unsigned));
+	 printf("size of a unsigned long is %d\n", (int) sizeof(unsigned long));
+	 printf("size of a float is %d\n", (int) sizeof(float));
+	 printf("size of a double is %d\n", (int) sizeof(double));
+	 printf("size of a long double is %d\n", (int) sizeof(long double));
      return 0;
 }
 
