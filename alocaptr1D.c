@@ -33,6 +33,19 @@ void Quadrado(int *M, int dim) {
         
 }
 
+void *Transposta(int *M, int dim) {
+    int *L;
+    int i,j;
+    
+    
+    L = malloc( dim*dim*sizeof(int *));
+    
+    for (i=0; i<dim; i++) 
+        for (j=0; j<dim; j++) 
+            L[i+dim*j] = M[j+dim*i];
+        
+    return L;
+}     
 
 int main(int argc, char **argv)
 {
@@ -52,7 +65,8 @@ int main(int argc, char **argv)
 		i++;
 	}		
 	
-	Quadrado(M,dim*dim);
+	// Quadrado(M,dim*dim);
+	M = Transposta(M,dim);
 	for(i=0;i<dim*dim;i++) {
         printf("%3d ",M[i]);
         if ((i+1)%dim==0) puts("");
