@@ -25,6 +25,15 @@
 #include <stdio.h>
 #include <stdlib.h> 
 
+void Quadrado(int *M, int dim) {
+    int i,j;
+    
+    for (i=0;i<dim;i++)
+        M[i]=M[i] * M[i];
+        
+}
+
+
 int main(int argc, char **argv)
 {
 	int *M;
@@ -34,7 +43,7 @@ int main(int argc, char **argv)
     leitura = fopen("matriz.dat", "r");
 	i = fscanf(leitura,"%d",&dim);
 	
-	M = malloc( dim*dim*sizeof(double *));
+	M = malloc( dim*dim*sizeof(int *));
 	i = 0;
 	
     
@@ -43,6 +52,7 @@ int main(int argc, char **argv)
 		i++;
 	}		
 	
+	Quadrado(M,dim*dim);
 	for(i=0;i<dim*dim;i++) {
         printf("%3d ",M[i]);
         if ((i+1)%dim==0) puts("");
